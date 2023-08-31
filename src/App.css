@@ -68,10 +68,10 @@ body {
 }
 
 .card-img-top {
-  max-height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  display: block;
+  max-width: 60%;
+  height: 60%;
+  margin: 10px auto;
 }
 
 .card-body {
@@ -79,9 +79,16 @@ body {
 }
 
 .card-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #333;
+  /* Style for the card title */
+  .card-title {
+    font-size: 28px;
+    margin: 15px 0;
+    font-family: "Montserrat", sans-serif; /* Change to a Google Font or any desired font */
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .card-text {
@@ -162,4 +169,23 @@ textarea.form-control {
 .submit-button:hover {
   background-color: #218838;
   border-color: #1e7e34;
+}
+/* Style for the container */
+.card-text1,
+.card-text2 {
+  font-size: 16px;
+  margin: 5px 0;
+  position: relative;
+  top: 55px;
+}
+
+/* Style for the author */
+.card-text1 {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the date */
+.card-text2 {
+  color: #555;
 }

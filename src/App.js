@@ -51,16 +51,16 @@ function PostItem({ post }) {
           src={`http://localhost:5000/uploads/${post.image}`}
           className="card-img-top"
           alt={""}
-          height={150}
-          width={260}
+          height={200}
+          width={200}
         />
 
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
           <p className="card-text">{post.content}</p>
-          <p className="card-text">Author: {post.author}</p>{" "}
+          <p className="card-text1">Published By: {post.author}</p>{" "}
           {/* Display Author */}
-          <p className="card-text">Date: {post.date}</p> {/* Display Date */}
+          <p className="card-text2">Date: {post.date}</p> {/* Display Date */}
           <div className="button-group">
             <Link to={`/edit/${post._id}`} className="btn btn-primary mr-2">
               <FaEdit className="icon" />
@@ -247,8 +247,8 @@ function ViewPost() {
         src={`http://localhost:5000/uploads/${post.image}`}
         className="card-img-top"
         alt={""}
-        height={150}
-        width={260}
+        height={200}
+        width={200}
       />
       <div>
         <button className="btn btn-danger mr-2" onClick={handleDelete}>
